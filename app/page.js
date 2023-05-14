@@ -13,8 +13,8 @@ export default function Home() {
           <h1 className="text-5xl font-bold pb-6">Welcome to Codrad!</h1>
           <p className="pb-6">
             Join me on this journey of discovery, where we will dive into
-            thought-provoking discussions and find new perspectives. Let's
-            create a community of learners, thinkers, and doers. Don't miss out
+            thought-provoking discussions and find new perspectives. Let&apos;s
+            create a community of learners, thinkers, and doers. Don&apos;t miss out
             on the fun!
           </p>
           <p className="pb-6">
