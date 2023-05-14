@@ -27,7 +27,7 @@ async function blogPostPage({ params }) {
             />
             <div className="card-body items-center text-center">
               <h2 className="card-title mb-5 text-3xl font-bold">
-                The post requested is not found!
+                Oops! we could'nt find for the post you're looking for...
               </h2>
 
               <div className="card-actions">
