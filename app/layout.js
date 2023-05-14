@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Codrad",
-  description: "A blog app powered by Next JS and dummyjson",
+  description: "A blog app powered by Next JS and Dummy JSON",
 };
 
 export default function RootLayout({ children }) {

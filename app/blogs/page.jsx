@@ -1,4 +1,4 @@
-import BlogCard from "./components/BlogCard";
+import BlogCard from "./BlogCard";
 
 const getAllPosts = async () => {
   const response = await fetch("https://dummyjson.com/posts");
@@ -6,7 +6,7 @@ const getAllPosts = async () => {
   return data.posts;
 };
 
-async function blogPages() {
+async function blogPostsPage() {
   const blogs = await getAllPosts();
   let filteredBlogs = blogs;
 
@@ -22,4 +22,4 @@ async function blogPages() {
   );
 }
 
-export default blogPages;
+export default blogPostsPage;
