@@ -7,6 +7,7 @@ export default function Home() {
         <img
           src="https://images.unsplash.com/photo-1558636815-1978d0419bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           className="w-full lg:max-w-lg rounded-lg shadow-2xl"
+          alt="Home page image"
         />
         <div className="text-center mt-10 lg:text-left lg:my-0">
           <h1 className="text-5xl font-bold pb-6">Welcome to Codrad!</h1>

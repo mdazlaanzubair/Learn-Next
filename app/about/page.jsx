@@ -7,6 +7,7 @@ const aboutPage = () => {
         <img
           src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           className="w-full lg:max-w-xl rounded-lg shadow-2xl"
+          alt="About page image"
         />
         <div className="text-center mt-10 lg:text-left lg:my-0 lg:ml-5">
           <h1 className="text-5xl font-bold pb-3">Something About Codrad!</h1>

@@ -22,7 +22,7 @@ async function blogPostPage({ params }) {
           <div className="card w-full lg:w-1/2">
             <img
               src="https://images.unsplash.com/photo-1581431886281-93ae50c19271?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              alt="blog random image"
+              alt="blog 404 not found image"
               className="rounded-xl shadow-xl mt-10 mx-10"
             />
             <div className="card-body items-center text-center">
