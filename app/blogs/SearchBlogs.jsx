@@ -11,18 +11,20 @@ function SearchBlogs() {
   const searchPosts = async (keyword) => {
     setIsLoading(true);
 
-    const response = await fetch(
-      "https://dummyjson.com/posts/search?q=" + keyword
-    );
+    if (searchKeyword.length >= 3) {
+      const response = await fetch(
+        "https://dummyjson.com/posts/search?q=" + keyword
+      );
 
-    if (response.status === 200) {
-      const data = await response.json();
-      setFilteredBlogs(data.posts);
-    } else {
-      setFilteredBlogs([]);
+      if (response.status === 200) {
+        const data = await response.json();
+        setFilteredBlogs(data.posts);
+      } else {
+        setFilteredBlogs([]);
+      }
+      setSearchKeyword("");
     }
 
-    setSearchKeyword("");
     setIsLoading(false);
   };
 
@@ -41,7 +43,7 @@ function SearchBlogs() {
               <input
                 type="text"
                 placeholder="Type search keyword here..."
-                className="input input-bordered focus:input-primary active:input-primary focus:outline-none w-full"
+                className="input input-bordered focus:outline-none focus:border-primary w-full"
                 onChange={(e) => setSearchKeyword(e.target.value)}
               />
 
@@ -72,6 +74,15 @@ function SearchBlogs() {
                 )}
               </button>
             </label>
+            {searchKeyword.length <= 3 && searchKeyword.length > 0 ? (
+              <label className="label">
+                <span className="label-text text-xs text-error">
+                  Search keyword must be longer than 3 characters.
+                </span>
+              </label>
+            ) : (
+              ""
+            )}
           </div>
 
           <ul className="menu mt-4 overflow-y-hidden">
@@ -82,8 +93,8 @@ function SearchBlogs() {
                 </li>
               ))
             ) : (
-              <li>
-                <a>Nothing to display.</a>
+              <li className="hover:bg-none">
+                <span>Nothing to display.</span>
               </li>
             )}
           </ul>

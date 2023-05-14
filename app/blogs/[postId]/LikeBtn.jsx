@@ -1,9 +1,15 @@
-const likePost = async (postId, likes) => {
+"use client";
+
+import { useState } from "react";
+
+const likePost = async (postId, reactions, isLiked) => {
+  const likes = isLiked ? reactions + 1 : reactions - 1;
+
   const response = await fetch("https://dummyjson.com/posts/" + postId, {
     method: "PUT" /* or PATCH */,
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      reactions: likes + 1,
+      reactions: likes,
     }),
   });
 
@@ -12,8 +18,15 @@ const likePost = async (postId, likes) => {
 };
 
 const LikeBtn = ({ blog }) => {
+  const [isLiked, setIsLiked] = useState(false);
+
+  const likes = isLiked ? blog.reactions + 1 : blog.reactions - 1;
+
   return (
-    <button className="btn btn-sm btn-ghost">
+    <button
+      className="btn btn-sm btn-ghost"
+      onClick={() => setIsLiked(!isLiked)}
+    >
       Likes {blog?.reactions}
       <svg
         xmlns="http://www.w3.org/2000/svg"

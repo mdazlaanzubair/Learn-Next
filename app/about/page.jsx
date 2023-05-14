@@ -6,9 +6,9 @@ const aboutPage = () => {
       <div className="hero-content flex-col lg:flex-row">
         <img
           src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-          className="w-full lg:max-w-lg rounded-lg shadow-2xl"
+          className="w-full lg:max-w-xl rounded-lg shadow-2xl"
         />
-        <div className="text-center mt-10 lg:text-left lg:my-0">
+        <div className="text-center mt-10 lg:text-left lg:my-0 lg:ml-5">
           <h1 className="text-5xl font-bold pb-3">Something About Codrad!</h1>
           <p className="pb-3">
             Welcome to Codrad, a blog dedicated to coding and technology
@@ -23,11 +23,6 @@ const aboutPage = () => {
             is designed to cater to both beginners and advanced coders, and we
             cover a wide range of topics including web development, mobile app
             development, data science, and more.
-          </p>
-          <p className="pb-3">
-            Thank you for joining us on this journey of learning and discovery.
-            We look forward to sharing our knowledge and experiences with you
-            and helping you become a better coder.
           </p>
           <Link href="/blogs" className="btn btn-primary">
             Explore

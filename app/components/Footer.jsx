@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-4 border-t border-gray-400 font-semibold">
+    <footer className="footer footer-center p-4 border-t border-gray-300 font-semibold">
       <div>
         <p>
           Copyright © 2k23 - All right reserved by{" "}

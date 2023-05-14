@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Codrad",
+  title: "Codrad - Blog",
   description: "A blog app powered by Next JS and Dummy JSON",
 };
 
